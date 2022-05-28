@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariam El-sarag</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- style links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo">Mariam <span>El-sarag</span> </div>
+            <button id="show-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="list">
+                <button id="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+                <li><a href="#about" class="active">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fas fa-moon" id="icon"></i>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- start about section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="content__text">
+                <h1><span>Hi,</span> I'm Mariam</h1>
+                <p class="title">Frontend developer</p>
+                <p class="text">I am passionate about web techniques, seeking to maximize my knowledge in this field by
+                    spending hours and hours learning New things, and making new projects to convert this knowledge into
+                    experience. </p>
+                <div class="social__links">
+                    <a download="" href="/pdf/Mariam Tarek Khaled.pdf">
+                        download CV <i class="fas fa-download"></i>
+                    </a>
+                    <a target="_blank" class="linked-in" href="https://www.linkedin.com/in/mariam-tarek-0b813a17a/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a target="_blank" class="github" href="https://github.com/Mariamtarek514">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <figure>
+                <img class="landing_pic" src="images/landing_light.svg" alt="landing picture">
+            </figure>
+        </div>
+    </section>
+    <div class="spider"></div>
+    <!-- end about section -->
+    <!-- start skills section -->
+    <section id="skills" class="skills">
+        <h2 class="special__heading">my skills</h2>
+        <div class="container">
+            <figure>
+                <img class="skills_picture" src="images/skills_light.svg" alt="girl set on table infront of her labtop">
+            </figure>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>HTML <span>90%</span> </h3>
+                    <div class="progress">
+                        <span data-width="90%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS <span>85%</span> </h3>
+                    <div class="progress">
+                        <span data-width="85%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>javaScript <span>60%</span> </h3>
+                    <div class="progress">
+                        <span data-width="60%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end skills section -->
+    <!-- start portfolio section -->
+    <section id="portfolio" class="portfolio">
+        <h2 class="special__heading">my portfolio</h2>
+        <div class="container">
+            <div class="project">
+                <img src="images/project_1.png" alt="first projec">
+                <figcaption>
+                    <a href="">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </figcaption>
+            </div>
+            <div class="project">
+                <img src="images/project_2.png" alt="first projec">
+                <figcaption>
+                    <a href="">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </figcaption>
+            </div>
+            <div class="project">
+                <img src="images/project_3.png" alt="first projec">
+                <figcaption>
+                    <a href="">
+                        <i class="fas fa-eye"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </figcaption>
+            </div>
+        </div>
+    </section>
+    <div class="spider"></div>
+    <!-- end portfolio section -->
+    <!-- start contact section -->
+    <section id="contact" class="contact">
+        <h2 class="special__heading">contact me</h2>
+        <div class="container">
+            <figure>
+                <img class="form_picture" src="images/contact_light.svg" alt="contact">
+            </figure>
+            <form method="post">
+                <input type="text" id="name" placeholder="Username" required>
+                <input type="email" id="email" placeholder="test@gmail.com" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+                <button id="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- end contact section -->
+    <footer class="footer">
+        <div class="container">
+            <p>made by Mariam Elsarg</p>
+            <ul>
+                <li> <a href="https://www.facebook.com/mariam.tarek.9047506">
+                        <i class="fab fa-facebook-f"></i>
+                    </a> </li>
+                <li> <a href="https://www.linkedin.com/in/mariam-tarek-0b813a17a/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a> </li>
+                <li> <a href="https://github.com/Mariamtarek514"><i class="fab fa-github"></i> </a> </li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- javaScript links -->
+    <script src="js/smtp.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
