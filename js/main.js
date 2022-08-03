@@ -112,24 +112,3 @@ document.addEventListener("click", (e) => {
         open.style.opacity = "1";
     }
 });
-// contact
-var btn = document.getElementById("btn");
-btn.addEventListener("click", (e) => {
-    e.preventDefault();
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
-    let body = `Name: ${name} <br>
-    email:${email} <br>
-    message:${message}`;
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "mariamelsarag44@gmail.com",
-        Password: "ayagwgjcvigjlnjh",
-        To: "mariamelsarag44@gmail.com",
-        From: email,
-        Subject: subject,
-        Body: body,
-    }).then((message) => alert(message));
-});

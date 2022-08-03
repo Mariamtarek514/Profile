@@ -130,6 +130,11 @@
 }
 /* end about section */
 /* start portfolio section */
+@media (max-width: 1059px) and (min-width: 991px) {
+    .portfolio .container .project {
+        height: 260px;
+    }
+}
 @media (max-width: 676px) {
     .portfolio .container .project {
         height: 100%;
