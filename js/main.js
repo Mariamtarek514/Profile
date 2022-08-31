@@ -23,15 +23,9 @@ window.addEventListener("scroll", () => {
     });
 });
 // change theme
-const darkMOdeToggle = document.getElementById("icon"),
-    landingPicture = document.querySelector(".landing_pic"),
-    skellsPicture = document.querySelector(".skills_picture"),
-    formPicture = document.querySelector(".form_picture");
+const darkMOdeToggle = document.getElementById("icon");
 let darkMode = localStorage.getItem("darkMode"),
-    changeIcone = localStorage.getItem("change-icon"),
-    changeLanding = localStorage.getItem("change-lnading-picture"),
-    changeSkills = localStorage.getItem("change-skills-picture"),
-    changeFormPicture = localStorage.getItem("change-form-picture");
+    changeIcone = localStorage.getItem("change-icon");
 // enabled dark mode
 const enableDarkMode = () => {
     // add darkMode class to body
@@ -43,18 +37,6 @@ const enableDarkMode = () => {
     darkMOdeToggle.classList.add("fa-sun");
     //add icon to localstorage
     localStorage.setItem("change-icon", "fa-sun");
-    // change landing picture
-    landingPicture.src = "images/landing_dark.svg";
-    // add to local storage
-    localStorage.setItem("change-lnading-picture", "images/landing_dark.svg");
-    // change skills picture
-    skellsPicture.src = "images/skills_dark.svg";
-    // add local storage
-    localStorage.setItem("change-skills-picture", "images/skills_dark.svg");
-    // change picture in form section
-    formPicture.src = "images/contact_dark.svg";
-    // add local storage
-    localStorage.setItem("change-form-picture", "images/contact_dark.svg");
 };
 // disabled dark mode
 const disableDarkMode = () => {
@@ -67,18 +49,6 @@ const disableDarkMode = () => {
     darkMOdeToggle.classList.remove("fa-sun");
     //add icon to localstorage
     localStorage.setItem("change-icon", "fa-moon");
-    // change picture
-    landingPicture.src = "images/landing_light.svg";
-    // add to local storage
-    localStorage.setItem("change-lnading-picture", "images/landing_light.svg");
-    // change skills picture
-    skellsPicture.src = "images/skills_light.svg";
-    // add local storage
-    localStorage.setItem("change-skills-picture", "images/skils_light.svg");
-    // change picture in form section
-    formPicture.src = "images/contact_light.svg";
-    // add local storage
-    localStorage.setItem("change-form-picture", "images/contact_light.svg");
 };
 // to updated local storage after reload
 if (darkMode === "enabled") {

@@ -111,3 +111,10 @@ section:nth-of-type(even) {
         linear-gradient(225deg, var(--background-them) 25%, transparent 25%);
 }
 /* end spider */
+.svg__img {
+    width: 100%;
+    height: auto;
+}
+.svg__fill {
+    fill: var(--primary-color);
+}
