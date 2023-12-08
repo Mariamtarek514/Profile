@@ -96,12 +96,13 @@ nav ul #icon:hover {
 /* start about section */
 .about {
     position: static;
-    min-height: calc(100vh - 70px);
+   
     color: var(--font-color);
     top: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top:3rem;
 }
 .about .container {
     display: flex;
