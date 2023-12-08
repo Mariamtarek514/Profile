@@ -104,6 +104,9 @@
 /* end nav section */
 /* start about section */
 @media (max-width: 767px) {
+    .about{
+        margin-top:unset;
+    }
     .about .container {
         flex-direction: column;
     }
